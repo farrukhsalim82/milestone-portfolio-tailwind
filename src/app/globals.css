@@ -1,0 +1,309 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  height: 70px;
+  background-color: #010459;
+  justify-content: center;
+}
+
+.header-buttons {
+  color: #ffffff;
+  padding: 15px;
+  font-size: 17px;
+  font-family: Roboto;
+  display: flex;
+  gap: 35px;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.footer {
+  padding: 10px;
+  width: 100%;
+  height: 50px;
+  background-color: #000000;
+  justify-content: center;  
+  left: 0;
+  bottom: 0;
+}
+
+.foot-text {
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  font-family: Roboto;
+}
+
+.my {
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  border-radius: 200px;
+  display: block;
+  margin: auto;
+  border: 3px solid #000000;
+}
+
+.first {
+  display: flex;
+  padding: 150px 50px;
+  background-image: url(images/main-bg4.jpg);
+  background-repeat: no-repeat;
+}
+
+.first-left {
+  width: 50%;
+}
+
+.first-right {
+  width: 50%;
+}
+
+.name {
+  font-size: 70px;
+  font-family: Roboto;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 0px 20px;
+  opacity: 0.4;
+  margin-bottom: 40px;
+}
+
+.other-particulars {
+  font-size: 35px;
+  font-family: Roboto;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 0px 20px;
+  opacity: 0.4;
+}
+
+.my-container {
+  width: 100%;
+}
+
+.about-me-top {
+  background-color: #01033b;
+  height:100px;
+  padding:30px;
+}
+
+.abt-me {
+  color: #ffffff;
+  font-size: 50px;
+  font-family: Roboto;
+  text-align: center;
+  font-weight: bold;
+}
+
+.abt-text {
+  font-size: 25px;
+  font-family: Roboto;
+  text-align: center;
+}
+
+.about-me-bottom {
+  padding: 120px 50px;
+  background-image: url(images/bg-op2.jpg);
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn-view, .btn-view2 {
+  height: 50px;
+  width: 150px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-family: Roboto;
+  font-size: 20px;
+  margin-top: 80px;
+}
+
+.btn-view {
+  background-color: #01033b;
+  color: #ffffff;
+}
+
+.btn-view2 {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.skills {
+  background-image: url(images/skills2-bg.jpg);
+}
+
+.skills-top {
+  background-color: #01033b;
+  height:100px;
+  padding:30px;
+}
+
+.skills-bottom-top {
+  display: flex;
+}
+
+.skill1, .skill2, .skill3, .skill4, .skill5 {
+  width: 20%;
+  text-align: center;
+}
+
+.html, .css, .next, .type, .tail {
+  display: block;
+  margin: auto;
+}
+
+.skills-bottom {
+  padding: 100px 150px;
+}
+
+.proj, .skills2, .ab-me {
+  min-height: 100vh;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+/* Mobile/Tablet Responsive Styles */
+@media (max-width: 768px) {
+  .header-buttons {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px 0;
+      font-size: 14px;
+  }
+
+  .first {
+      padding: 50px 20px;
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .first-left, .first-right {
+      width: 100%;
+  }
+
+  .name {
+      font-size: 40px;
+      margin-bottom: 20px;
+      height:60px;
+      padding:40px;
+  }
+  .top-name{
+    padding:40px;
+  }
+
+  .other-particulars {
+      font-size: 25px;
+  }
+
+  .abt-me {
+      font-size: 35px;
+  }
+
+  .abt-text {
+      font-size: 18px;
+  }
+
+  .about-me-bottom {
+      padding: 60px 20px;
+  }
+
+  .btn-view, .btn-view2 {
+      width: 120px;
+      height: 40px;
+      font-size: 16px;
+      margin-top: 40px;
+  }
+
+  .skills-bottom {
+      padding: 50px 30px;
+  }
+
+  .skill1, .skill2, .skill3, .skill4, .skill5 {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .skills-bottom-top {
+      flex-direction: column;
+  }
+
+  .my {
+      width: 300px;
+      height: 300px;
+  }
+
+  .name, .other-particulars {
+      padding: 0px 10px;
+  }
+
+  .proj, .skills2, .ab-me {
+      min-height: auto;
+  }
+}
+
+/* Smaller Mobile (Portrait Mode) */
+@media (max-width: 480px) {
+  .header {
+      padding: 8px;
+  }
+
+  .header-buttons {
+      font-size: 12px;
+  }
+
+  .name {
+      font-size: 30px;
+      margin-bottom: 15px;
+  }
+
+  .other-particulars {
+      font-size: 20px;
+  }
+
+  .abt-me {
+      font-size: 28px;
+      height:100;
+  }
+
+  .abt-text {
+      font-size: 16px;
+  }
+
+  .btn-view, .btn-view2 {
+      width: 100px;
+      height: 35px;
+      font-size: 14px;
+      margin-top: 20px;
+  }
+
+  .skills-bottom {
+      padding: 30px 10px;
+  }
+
+  .skill1, .skill2, .skill3, .skill4, .skill5 {
+      width: 100%;
+  }
+
+  .skills-bottom-top {
+      flex-direction: column;
+  }
+
+  .my {
+      width: 250px;
+      height: 250px;
+  }
+
+  .proj, .skills2, .ab-me {
+      min-height: auto;
+  }
+}
